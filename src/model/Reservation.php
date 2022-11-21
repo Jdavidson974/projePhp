@@ -34,12 +34,12 @@ class Reservation{
 //         return $data;
 //     }
 
-//     public static function delete($id){
-//         $sql = "DELETE FROM ordinateurs WHERE Id_ordinateurs = ?";
-//         $connexion = new ConnexionDb();
-//         $param = array($id);
-//         $data = $connexion->updateDelete($sql,$param);
-//         return $data;
-//     }
+    public static function delete($id){
+        $sql = "DELETE FROM reservation WHERE Id_ordinateurs = ?";
+        $connexion = new ConnexionDb();
+        $param = array($id);
+        $data = $connexion->updateDelete($sql,$param);
+        return $data;
+    }
 }
 ?>

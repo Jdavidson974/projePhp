@@ -2,6 +2,7 @@
     if(!empty($ordinateurs)&& !empty($users)){
         
 ?>
+<h1 class="text-center">Création d'une reservation</h1>
 <div id="articlesMain" class="container">
     <div class="wrapper fadeInDown">
         <div id="formContent" class="p-4">

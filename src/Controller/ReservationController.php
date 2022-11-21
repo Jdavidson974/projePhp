@@ -75,17 +75,17 @@ class ReservationController{
 //             header('Location: /');
 //         }
 //     }
-//     public static function delete($id){
-//         if(isset($_SESSION['connected'])){
-//             if($_SESSION['connected'] == true){
-//                 Utilisateurs::delete(intVal($id[0]));
-//                 header('Location: /utilisateurs');
-//             }else{
-//                 header('Location: /');
-//             }
-//         }else{
-//             header('Location: /');
-//         }
-//     }
+    public static function delete($id){
+        if(isset($_SESSION['connected'])){
+            if($_SESSION['connected'] == true){
+                Reservation::delete(intVal($id[0]));
+                header('Location: /reservations');
+            }else{
+                header('Location: /');
+            }
+        }else{
+            header('Location: /');
+        }
+    }
 }
 ?>
